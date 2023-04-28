@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px
+}
+
+html{
+    height: 100%;
+}
+
+
+
+body{
+    background-color: rgb(216, 213, 210);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
+.header{
+    background-color: rgb(247, 238, 226);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.header .logo img{
+    height: 95px;
+    width: auto;
+    float: left;
+}
+
+.header .nav_links{
+    list-style: none;
+}
+
+.header .nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav_links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.main_section{
+
+}
+
+.titulo_principal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 150;
+    font-size: 100px;
+    
+
+}
+
+
+.titulo_secundario{
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 150;
+    display: flex;
+    font-size: 80px;
+}
+
+
+.container{
+    max-width: 1900px;
+    margin:0 auto;
+    
+}
+
+
+.footer{
+    margin-top: auto;
+    background-color: black;
+    padding: 15px 0;
+    color: #e0e0e0;
+    font-size: 18px;
+
+}
+
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer_links{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer_links h4{
+    color: #e0e0e0;
+    font-size: 13px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #b8b5b5;
+    padding-bottom: 10px;
+    display: inline-block;
+    
+}
+
+.footer_links ul li{
+    list-style: none;
+}
+
+
+
+.footer_links ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease
+}
+
+.footer_logo{
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+
+@media(max-widht:991px){
+    .header{
+        flex-direction: column;
+    }
+    
+    .footer_row{
+        text-align: center;
+    }
+
+    .footer_links{
+        width: 100%;
+        margin-bottom: 30;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.header {
+    background-color: rgba(213, 222, 230, 0.856);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+
+}
+
+.logo {
+    margin-right: 20px;
+    display: flex;
+    width: auto;
+    height: 80px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 35px;
+    font-size: large;
+}
+
+.nav_bar_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_bar_list_element {
+    font-size: 700;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.main {
+    width: 100%; 
+}
+
+.main_section{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 50px;
+}
+
+.titulo_principal {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 150;
+    display: block;
+}
+
+.titulo_secundario {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 150;
+    display: block;
+}
+
+
+p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    line-height: 20px;
+}
+
+
+.footer {
+    height: min-content;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 1000px;
+    color: aliceblue;
+    
+    
+}
+
+.footer_logo{
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.footer_p {
+    color: aliceblue;
+}
+
+.footer_contactanos{
+    
+
+}
+
+.footer_redes_sociales{
+
+}
+
+.footer_medios_de_pago{
+
+}
+
+.footer_navegacion{
+    
+}
+
+.footer_li{
+    list-style: none;
+}
